@@ -55,7 +55,8 @@ class Window(QMainWindow, Ui_MainWindow):
         self.a = random.randrange(10, 200)
         self.x = random.randrange(10, 200)
         self.y = random.randrange(10, 200)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(
+            QColor(random.randrange(0, 255), random.randrange(0, 255), random.randrange(0, 255)))
         qp.drawEllipse(self.x, self.y, self.a, self.a)
 
 
